@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="OgM-86-R7E">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="OgM-86-R7E" customClass="ProverbsTableViewCell" customModule="Angelita" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OgM-86-R7E" id="YDy-fJ-DcF">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRR-E8-jcg">
+                                            <rect key="frame" x="309" y="11" width="48" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <state key="normal" title="Opposite"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-9f-nRK">
+                                            <rect key="frame" x="18" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NRR-E8-jcg" firstAttribute="baseline" secondItem="BUr-9f-nRK" secondAttribute="baseline" id="53A-vU-E9w"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NRR-E8-jcg" secondAttribute="trailing" constant="10" id="Y5o-18-SMd"/>
+                                        <constraint firstItem="BUr-9f-nRK" firstAttribute="centerY" secondItem="YDy-fJ-DcF" secondAttribute="centerY" id="dWU-CG-21W"/>
+                                        <constraint firstItem="BUr-9f-nRK" firstAttribute="leading" secondItem="YDy-fJ-DcF" secondAttribute="leadingMargin" constant="10" id="hmp-72-fre"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="proverbDescription" destination="BUr-9f-nRK" id="1tC-oB-mID"/>
+                                    <outlet property="seeOpposite" destination="NRR-E8-jcg" id="P0i-hW-jgt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

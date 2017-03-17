@@ -8,6 +8,13 @@
 
 import UIKit
 
+class ProverbsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var proverbDescription: UILabel!
+    
+    @IBOutlet weak var seeOpposite: UIButton!
+}
+
 class ProverbsTableViewController: UITableViewController {
     
     var proverbs = ProverbsManager()
@@ -42,9 +49,14 @@ class ProverbsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ProverbsTableViewCell
 
-        cell.textLabel?.text = proverbs.proverbsArray[indexPath.row].description
+        let proverb = proverbs.proverbsArray[indexPath.row]
+        
+        //cell.textLabel?.text = proverbs.proverbsArray[indexPath.row].description
+        
+        cell.proverbDescription?.text = proverb.description
+        cell.seeOpposite?.isEnabled = proverb.hasOpposite
 
         return cell
     }
