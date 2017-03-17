@@ -3,6 +3,8 @@
              "id": 1,
              "description": "No por mucho madrugar, amanece más temprano.",
              "meaning": "Por mucho que nos empeñemos, las cosas son como son.",
+             "publishedAt": "01-03-2017",
+             "numberOfValidations": 4,
              "hasOpposite": true,
              "oppositeID": 3
              
@@ -12,6 +14,8 @@
              "id": 2,
              "description": "A la cama no te irás sin saber una cosa más.",
              "meaning": "Todos los días se aprende algo nuevo.",
+             "publishedAt": "02-03-2017",
+             "numberOfValidations": 15,
              "hasOpposite": false,
              "oppositeID": null
              },
@@ -20,6 +24,8 @@
              "id": 3,
              "description": "A quien madruga, dios le ayuda.",
              "meaning": "Si le pones interés, conseguirás tu objetivo.",
+             "publishedAt": "04-03-2017",
+             "numberOfValidations": 10,
              "hasOpposite": true,
              "oppositeID": 1
              },
@@ -28,6 +34,8 @@
              "id": 4,
              "description": "Cada maestrillo tiene su librillo.",
              "meaning": "Cada persona hace las cosas a su manera.",
+             "publishedAt": "04-03-2017",
+             "numberOfValidations": 36,
              "hasOpposite": false,
              "oppositeID": null
              },
@@ -36,6 +44,8 @@
              "id": 5,
              "description": "No dejes para mañana lo que puedas hacer hoy.",
              "meaning": "No hay que ser perezoso.",
+             "publishedAt": "07-03-2017",
+             "numberOfValidations": 12,
              "hasOpposite": false,
              "oppositeID": null
              }
