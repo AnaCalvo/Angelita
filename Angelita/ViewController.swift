@@ -9,9 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var proverbs = ProverbsManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        proverbs.getProverbs()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
