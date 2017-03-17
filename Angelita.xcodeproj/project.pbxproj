@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8367A7AA1E7C1EE400447AF4 /* proverbs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8367A7A91E7C1EE400447AF4 /* proverbs.json */; };
 		8369B1301E7AFB1800F25A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */; };
 		8369B1321E7AFB1800F25A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369B1311E7AFB1800F25A4B /* ViewController.swift */; };
 		8369B1351E7AFB1800F25A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8369B1331E7AFB1800F25A4B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8367A7A91E7C1EE400447AF4 /* proverbs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = proverbs.json; sourceTree = "<group>"; };
 		8369B12C1E7AFB1800F25A4B /* Angelita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angelita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8369B1311E7AFB1800F25A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		8369B12E1E7AFB1800F25A4B /* Angelita */ = {
 			isa = PBXGroup;
 			children = (
+				8367A7A91E7C1EE400447AF4 /* proverbs.json */,
 				8369B1411E7AFC5500F25A4B /* Proverb.swift */,
 				8369B1421E7AFC5500F25A4B /* User.swift */,
 				8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */,
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8367A7AA1E7C1EE400447AF4 /* proverbs.json in Resources */,
 				8369B13A1E7AFB1800F25A4B /* LaunchScreen.storyboard in Resources */,
 				8369B1371E7AFB1800F25A4B /* Assets.xcassets in Resources */,
 				8369B1351E7AFB1800F25A4B /* Main.storyboard in Resources */,
@@ -308,6 +312,7 @@
 				8369B1401E7AFB1800F25A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

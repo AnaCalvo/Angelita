@@ -1,0 +1,54 @@
+{
+	"data": [
+		{
+			"id": 01, 
+			"description": "No por mucho madrugar, amanece más temprano.",
+			"meaning": "Por mucho que nos empeñemos, las cosas son como son.",
+			"hasOpposite": true,
+			"oppositeID": 03
+
+		}, 
+
+		{
+			"id": 02, 
+			"description": "A la cama no te irás sin saber una cosa más.",
+			"meaning": "Todos los días se aprende algo nuevo.",
+			"hasOpposite": false,
+			"oppositeID": null
+		},
+
+		{
+			"id": 03, 
+			"description": "A quien madruga, dios le ayuda.",
+			"meaning": "Si le pones interés, conseguirás tu objetivo.",
+			"hasOpposite": true,
+			"oppositeID": 01
+		},
+
+		{
+			"id": 04, 
+			"description": "Cada maestrillo tiene su librillo.",
+			"meaning": "Cada persona hace las cosas a su manera.",
+			"hasOpposite": false,
+			"oppositeID": null
+		},
+
+		{
+			"id": 05, 
+			"description": "No dejes para mañana lo que puedas hacer hoy.",
+			"meaning": "No hay que ser perezoso.",
+			"hasOpposite": false,
+			"oppositeID": null
+		}
+	]
+
+}
+
+
+
+
+
+
+
+
+
