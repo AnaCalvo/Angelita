@@ -27,12 +27,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRR-E8-jcg">
-                                            <rect key="frame" x="309" y="11" width="48" height="26"/>
+                                            <rect key="frame" x="65" y="13" width="292" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Opposite"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-9f-nRK">
-                                            <rect key="frame" x="18" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="18" y="10" width="42" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -40,11 +40,15 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="NRR-E8-jcg" firstAttribute="baseline" secondItem="BUr-9f-nRK" secondAttribute="baseline" id="53A-vU-E9w"/>
+                                        <constraint firstItem="NRR-E8-jcg" firstAttribute="leading" secondItem="BUr-9f-nRK" secondAttribute="trailing" constant="5" id="Ilf-ig-FvG"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="NRR-E8-jcg" secondAttribute="trailing" constant="10" id="Y5o-18-SMd"/>
-                                        <constraint firstItem="BUr-9f-nRK" firstAttribute="centerY" secondItem="YDy-fJ-DcF" secondAttribute="centerY" id="dWU-CG-21W"/>
                                         <constraint firstItem="BUr-9f-nRK" firstAttribute="leading" secondItem="YDy-fJ-DcF" secondAttribute="leadingMargin" constant="10" id="hmp-72-fre"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BUr-9f-nRK" secondAttribute="bottom" constant="10" id="5tj-QH-RcA"/>
+                                    <constraint firstItem="BUr-9f-nRK" firstAttribute="top" secondItem="OgM-86-R7E" secondAttribute="top" constant="10" id="hYm-LQ-aI1"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="proverbDescription" destination="BUr-9f-nRK" id="1tC-oB-mID"/>
                                     <outlet property="seeOpposite" destination="NRR-E8-jcg" id="P0i-hW-jgt"/>
