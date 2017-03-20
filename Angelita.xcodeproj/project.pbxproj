@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8367A7AA1E7C1EE400447AF4 /* proverbs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8367A7A91E7C1EE400447AF4 /* proverbs.json */; };
 		8367A7AC1E7C3D9D00447AF4 /* ProverbsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367A7AB1E7C3D9D00447AF4 /* ProverbsTableViewController.swift */; };
+		8367A7AE1E800C5C00447AF4 /* ProverbDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367A7AD1E800C5C00447AF4 /* ProverbDetailViewController.swift */; };
 		8369B1301E7AFB1800F25A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */; };
 		8369B1351E7AFB1800F25A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8369B1331E7AFB1800F25A4B /* Main.storyboard */; };
 		8369B1371E7AFB1800F25A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8369B1361E7AFB1800F25A4B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		8367A7A91E7C1EE400447AF4 /* proverbs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = proverbs.json; sourceTree = "<group>"; };
 		8367A7AB1E7C3D9D00447AF4 /* ProverbsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProverbsTableViewController.swift; sourceTree = "<group>"; };
+		8367A7AD1E800C5C00447AF4 /* ProverbDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProverbDetailViewController.swift; sourceTree = "<group>"; };
 		8369B12C1E7AFB1800F25A4B /* Angelita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angelita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8369B1341E7AFB1800F25A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				8369B1421E7AFC5500F25A4B /* User.swift */,
 				8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */,
 				8369B1331E7AFB1800F25A4B /* Main.storyboard */,
+				8367A7AD1E800C5C00447AF4 /* ProverbDetailViewController.swift */,
 				8367A7AB1E7C3D9D00447AF4 /* ProverbsTableViewController.swift */,
 				8369B1361E7AFB1800F25A4B /* Assets.xcassets */,
 				8369B1381E7AFB1800F25A4B /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				8367A7AC1E7C3D9D00447AF4 /* ProverbsTableViewController.swift in Sources */,
 				8369B1441E7AFC5500F25A4B /* User.swift in Sources */,
 				8369B1301E7AFB1800F25A4B /* AppDelegate.swift in Sources */,
+				8367A7AE1E800C5C00447AF4 /* ProverbDetailViewController.swift in Sources */,
 				8369B1431E7AFC5500F25A4B /* Proverb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

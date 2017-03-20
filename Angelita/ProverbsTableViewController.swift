@@ -17,10 +17,12 @@ class ProverbsTableViewCell: UITableViewCell {
 
 class ProverbsTableViewController: UITableViewController {
     
-    var proverbs = ProverbsManager()
+    var proverbs: ProverbsManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        proverbs = ProverbsManager(delegate: self)
         proverbs.getProverbs()
 
         // Uncomment the following line to preserve selection between presentations
@@ -61,6 +63,12 @@ class ProverbsTableViewController: UITableViewController {
         return cell
     }
     
+    
+    func refresh() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

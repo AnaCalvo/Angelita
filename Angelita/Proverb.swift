@@ -44,7 +44,13 @@ struct Proverb {
 
 class ProverbsManager {
     
+    let delegate: ProverbsTableViewController
+    
     var proverbsArray: [Proverb] = []
+    
+    init(delegate: ProverbsTableViewController) {
+        self.delegate = delegate
+    }
     
     func getProverbs() {
         
@@ -70,8 +76,10 @@ class ProverbsManager {
             }
             
             print(proverbsArray)
+            
         }
         
+         self.delegate.refresh()
     }
 }
 
