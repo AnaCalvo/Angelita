@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="440.80000000000001" y="120.98950524737631"/>
         </scene>
-        <!--Proverb Detail View Controller-->
+        <!--Detail-->
         <scene sceneID="0Sd-xC-fe4">
             <objects>
-                <viewController id="p77-8R-OKc" customClass="ProverbDetailViewController" customModule="Angelita" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="p77-8R-OKc" customClass="ProverbDetailViewController" customModule="Angelita" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V98-0P-T03"/>
                         <viewControllerLayoutGuide type="bottom" id="bnd-M7-nuK"/>
@@ -78,12 +78,45 @@
                     <view key="view" contentMode="scaleToFill" id="Kfn-Eu-1XF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-4A-gpL">
+                                <rect key="frame" x="16" y="99" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-EE-tMV">
+                                <rect key="frame" x="16" y="174" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgY-dn-vA5">
+                                <rect key="frame" x="16" y="261" width="90" height="30"/>
+                                <state key="normal" title="See opposite"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KgY-dn-vA5" firstAttribute="top" secondItem="Wyc-EE-tMV" secondAttribute="bottom" constant="66" id="GMe-xg-Wh5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bbh-4A-gpL" secondAttribute="trailing" constant="10" id="Mk9-x6-Q93"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wyc-EE-tMV" secondAttribute="trailing" constant="10" id="SVb-z4-sSy"/>
+                            <constraint firstItem="Wyc-EE-tMV" firstAttribute="leading" secondItem="Bbh-4A-gpL" secondAttribute="leading" id="Tc0-Km-1JS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bbh-4A-gpL" secondAttribute="leading" id="bLC-K4-jrc"/>
+                            <constraint firstItem="Wyc-EE-tMV" firstAttribute="top" secondItem="Bbh-4A-gpL" secondAttribute="bottom" constant="54" id="c2x-Sa-G38"/>
+                            <constraint firstItem="KgY-dn-vA5" firstAttribute="leading" secondItem="Wyc-EE-tMV" secondAttribute="leading" id="cJM-MZ-KK3"/>
+                            <constraint firstItem="Bbh-4A-gpL" firstAttribute="top" secondItem="V98-0P-T03" secondAttribute="bottom" constant="35" id="t4p-Z1-28X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="proverbDescription" destination="Bbh-4A-gpL" id="ABK-3C-i5h"/>
+                        <outlet property="proverbMeaning" destination="Wyc-EE-tMV" id="5y7-3l-oc7"/>
+                        <outlet property="seeOpposite" destination="KgY-dn-vA5" id="PJo-Nt-rKu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbW-WX-8Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="121"/>
+            <point key="canvasLocation" x="1304.8" y="120.98950524737631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="09N-N3-10i">

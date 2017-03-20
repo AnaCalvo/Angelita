@@ -9,9 +9,21 @@
 import UIKit
 
 class ProverbDetailViewController: UIViewController {
+    
+    @IBOutlet weak var proverbDescription: UILabel!
 
+    @IBOutlet weak var proverbMeaning: UILabel!
+    
+    @IBOutlet weak var seeOpposite: UIButton!
+    
+    var proverb: Proverb!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        proverbDescription.text = proverb.description
+        proverbMeaning.text = proverb.meaning
+        seeOpposite.isEnabled = proverb.hasOpposite
+        
 
         // Do any additional setup after loading the view.
     }
@@ -20,16 +32,6 @@ class ProverbDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
