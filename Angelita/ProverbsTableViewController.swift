@@ -63,7 +63,6 @@ class ProverbsTableViewController: UITableViewController {
         return cell
     }
     
-    
     func refresh() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -76,8 +75,24 @@ class ProverbsTableViewController: UITableViewController {
         
         if let destination = segue.destination as? ProverbDetailViewController {
             
-            destination.proverb = proverbs.proverbsArray[tableView.indexPathForSelectedRow!.row]
-            
+            let selectedProverb = proverbs.proverbsArray[tableView.indexPathForSelectedRow!.row]
+            destination.proverb = selectedProverb
+        }
+        
+    }
+    
+    func showProverb(id: Int) -> Proverb? {
+        
+        var idArray: [Int] = []
+    
+        for proverb in proverbs.proverbsArray {
+            idArray.append(proverb.id)
+        }
+        
+        if let proverbIndex = idArray.index(of: id) {
+            return proverbs.proverbsArray[proverbIndex]
+        } else {
+            return nil
         }
         
     }
