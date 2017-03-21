@@ -17,5 +17,5 @@ struct User {
     let password: String
     let favoriteList: [Proverb]
     let publishedList: [Proverb]
-    let rank: Int
+    let rank: UserRank
 }
