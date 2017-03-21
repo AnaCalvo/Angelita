@@ -14,39 +14,39 @@
         <scene sceneID="Oar-Oa-cO2">
             <objects>
                 <tableViewController id="54q-7L-siQ" customClass="ProverbsTableViewController" customModule="Angelita" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ma5-Yv-5Z1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" sectionHeaderHeight="28" sectionFooterHeight="28" id="ma5-Yv-5Z1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="OgM-86-R7E" customClass="ProverbsTableViewCell" customModule="Angelita" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="111" id="OgM-86-R7E" customClass="ProverbsTableViewCell" customModule="Angelita" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OgM-86-R7E" id="YDy-fJ-DcF">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRR-E8-jcg">
-                                            <rect key="frame" x="65" y="13" width="292" height="26"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <state key="normal" title="Opposite"/>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-9f-nRK">
-                                            <rect key="frame" x="18" y="10" width="42" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="18" y="10" width="339" height="18.5"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRR-E8-jcg">
+                                            <rect key="frame" x="18" y="68.5" width="74" height="28.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <state key="normal" title="See opposite"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="NRR-E8-jcg" firstAttribute="baseline" secondItem="BUr-9f-nRK" secondAttribute="baseline" id="53A-vU-E9w"/>
-                                        <constraint firstItem="NRR-E8-jcg" firstAttribute="leading" secondItem="BUr-9f-nRK" secondAttribute="trailing" constant="5" id="Ilf-ig-FvG"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="NRR-E8-jcg" secondAttribute="trailing" constant="10" id="Y5o-18-SMd"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="NRR-E8-jcg" secondAttribute="bottom" constant="5" id="Quc-qn-kJA"/>
+                                        <constraint firstItem="NRR-E8-jcg" firstAttribute="leading" secondItem="BUr-9f-nRK" secondAttribute="leading" id="aqF-j1-TiT"/>
                                         <constraint firstItem="BUr-9f-nRK" firstAttribute="leading" secondItem="YDy-fJ-DcF" secondAttribute="leadingMargin" constant="10" id="hmp-72-fre"/>
+                                        <constraint firstItem="NRR-E8-jcg" firstAttribute="top" secondItem="BUr-9f-nRK" secondAttribute="bottom" constant="40" id="upE-OJ-TE7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BUr-9f-nRK" secondAttribute="trailing" constant="10" id="xmq-CI-KsU"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="BUr-9f-nRK" secondAttribute="bottom" constant="10" id="5tj-QH-RcA"/>
                                     <constraint firstItem="BUr-9f-nRK" firstAttribute="top" secondItem="OgM-86-R7E" secondAttribute="top" constant="10" id="hYm-LQ-aI1"/>
                                 </constraints>
                                 <connections>
@@ -80,32 +80,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-4A-gpL">
-                                <rect key="frame" x="16" y="99" width="333" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-EE-tMV">
-                                <rect key="frame" x="16" y="174" width="333" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="99" width="333" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgY-dn-vA5">
-                                <rect key="frame" x="16" y="261" width="90" height="30"/>
+                                <rect key="frame" x="16" y="284" width="90" height="30"/>
                                 <state key="normal" title="See opposite"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Significado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLV-90-Qtt">
+                                <rect key="frame" x="16" y="167.5" width="90" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-EE-tMV">
+                                <rect key="frame" x="16" y="207" width="333" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KgY-dn-vA5" firstAttribute="top" secondItem="Wyc-EE-tMV" secondAttribute="bottom" constant="66" id="GMe-xg-Wh5"/>
+                            <constraint firstItem="KgY-dn-vA5" firstAttribute="leading" secondItem="Wyc-EE-tMV" secondAttribute="leading" id="0cL-hf-X0J"/>
+                            <constraint firstItem="Wyc-EE-tMV" firstAttribute="leading" secondItem="WLV-90-Qtt" secondAttribute="leading" id="8dm-Ac-GPS"/>
+                            <constraint firstItem="Wyc-EE-tMV" firstAttribute="top" secondItem="WLV-90-Qtt" secondAttribute="bottom" constant="20" id="Jt9-2U-kxD"/>
+                            <constraint firstItem="WLV-90-Qtt" firstAttribute="leading" secondItem="Bbh-4A-gpL" secondAttribute="leading" id="Loy-jR-SJ7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bbh-4A-gpL" secondAttribute="trailing" constant="10" id="Mk9-x6-Q93"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wyc-EE-tMV" secondAttribute="trailing" constant="10" id="SVb-z4-sSy"/>
-                            <constraint firstItem="Wyc-EE-tMV" firstAttribute="leading" secondItem="Bbh-4A-gpL" secondAttribute="leading" id="Tc0-Km-1JS"/>
+                            <constraint firstItem="WLV-90-Qtt" firstAttribute="top" secondItem="Bbh-4A-gpL" secondAttribute="bottom" constant="50" id="NB5-Rt-Jzi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wyc-EE-tMV" secondAttribute="trailing" constant="10" id="VE7-xW-49R"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Bbh-4A-gpL" secondAttribute="leading" id="bLC-K4-jrc"/>
-                            <constraint firstItem="Wyc-EE-tMV" firstAttribute="top" secondItem="Bbh-4A-gpL" secondAttribute="bottom" constant="54" id="c2x-Sa-G38"/>
-                            <constraint firstItem="KgY-dn-vA5" firstAttribute="leading" secondItem="Wyc-EE-tMV" secondAttribute="leading" id="cJM-MZ-KK3"/>
                             <constraint firstItem="Bbh-4A-gpL" firstAttribute="top" secondItem="V98-0P-T03" secondAttribute="bottom" constant="35" id="t4p-Z1-28X"/>
+                            <constraint firstItem="KgY-dn-vA5" firstAttribute="top" secondItem="Wyc-EE-tMV" secondAttribute="bottom" constant="58.5" id="wzA-Xl-qkh"/>
                         </constraints>
                     </view>
                     <connections>
