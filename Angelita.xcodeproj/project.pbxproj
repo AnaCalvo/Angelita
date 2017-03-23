@@ -11,6 +11,7 @@
 		8367A7AC1E7C3D9D00447AF4 /* ProverbsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367A7AB1E7C3D9D00447AF4 /* ProverbsTableViewController.swift */; };
 		8367A7AE1E800C5C00447AF4 /* ProverbDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367A7AD1E800C5C00447AF4 /* ProverbDetailViewController.swift */; };
 		8367A7B01E81806200447AF4 /* UserRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367A7AF1E81806200447AF4 /* UserRank.swift */; };
+		8367A7B41E81BAD300447AF4 /* ProverbsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367A7B31E81BAD300447AF4 /* ProverbsTableViewCell.swift */; };
 		8369B1301E7AFB1800F25A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */; };
 		8369B1351E7AFB1800F25A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8369B1331E7AFB1800F25A4B /* Main.storyboard */; };
 		8369B1371E7AFB1800F25A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8369B1361E7AFB1800F25A4B /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		8367A7AB1E7C3D9D00447AF4 /* ProverbsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProverbsTableViewController.swift; sourceTree = "<group>"; };
 		8367A7AD1E800C5C00447AF4 /* ProverbDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProverbDetailViewController.swift; sourceTree = "<group>"; };
 		8367A7AF1E81806200447AF4 /* UserRank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRank.swift; sourceTree = "<group>"; };
+		8367A7B31E81BAD300447AF4 /* ProverbsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProverbsTableViewCell.swift; sourceTree = "<group>"; };
 		8369B12C1E7AFB1800F25A4B /* Angelita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Angelita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8369B12F1E7AFB1800F25A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8369B1341E7AFB1800F25A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				8369B1331E7AFB1800F25A4B /* Main.storyboard */,
 				8367A7AD1E800C5C00447AF4 /* ProverbDetailViewController.swift */,
 				8367A7AB1E7C3D9D00447AF4 /* ProverbsTableViewController.swift */,
+				8367A7B31E81BAD300447AF4 /* ProverbsTableViewCell.swift */,
 				8369B1361E7AFB1800F25A4B /* Assets.xcassets */,
 				8369B1381E7AFB1800F25A4B /* LaunchScreen.storyboard */,
 				8369B13B1E7AFB1800F25A4B /* Info.plist */,
@@ -155,6 +158,7 @@
 			files = (
 				8367A7B01E81806200447AF4 /* UserRank.swift in Sources */,
 				8367A7AC1E7C3D9D00447AF4 /* ProverbsTableViewController.swift in Sources */,
+				8367A7B41E81BAD300447AF4 /* ProverbsTableViewCell.swift in Sources */,
 				8369B1441E7AFC5500F25A4B /* User.swift in Sources */,
 				8369B1301E7AFB1800F25A4B /* AppDelegate.swift in Sources */,
 				8367A7AE1E800C5C00447AF4 /* ProverbDetailViewController.swift in Sources */,

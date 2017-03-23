@@ -8,59 +8,53 @@
 
 import UIKit
 
-class ProverbsTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var proverbDescription: UILabel!
-    
-    @IBOutlet weak var seeOpposite: UIButton!
-}
-
 class ProverbsTableViewController: UITableViewController {
     
     var proverbs: ProverbsManager!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         proverbs = ProverbsManager(delegate: self)
         proverbs.getProverbs()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return proverbs.proverbsArray.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ProverbsTableViewCell
-
+        
         let proverb = proverbs.proverbsArray[indexPath.row]
         
         //cell.textLabel?.text = proverbs.proverbsArray[indexPath.row].description
         
         cell.proverbDescription?.text = proverb.description
         cell.seeOpposite?.isEnabled = proverb.hasOpposite
-
+        
         return cell
+        
     }
     
     func refresh() {
@@ -68,7 +62,7 @@ class ProverbsTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
-
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -77,24 +71,15 @@ class ProverbsTableViewController: UITableViewController {
             
             let selectedProverb = proverbs.proverbsArray[tableView.indexPathForSelectedRow!.row]
             destination.proverb = selectedProverb
+            
+            if let oppositeID = selectedProverb.oppositeID {
+                let oppositeProverb = proverbs.showProverb(id: oppositeID)
+                destination.proverbOpposite = oppositeProverb
+            }
+            
+            
         }
         
     }
     
-    func showProverb(id: Int) -> Proverb? {
-        
-        var idArray: [Int] = []
-    
-        for proverb in proverbs.proverbsArray {
-            idArray.append(proverb.id)
-        }
-        
-        if let proverbIndex = idArray.index(of: id) {
-            return proverbs.proverbsArray[proverbIndex]
-        } else {
-            return nil
-        }
-        
-    }
-
 }

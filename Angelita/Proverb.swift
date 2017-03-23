@@ -46,7 +46,7 @@ class ProverbsManager {
     
     let delegate: ProverbsTableViewController
     
-    var proverbsArray: [Proverb] = []
+    public var proverbsArray: [Proverb] = []
     
     init(delegate: ProverbsTableViewController) {
         self.delegate = delegate
@@ -75,12 +75,26 @@ class ProverbsManager {
                 
             }
             
-            print(proverbsArray)
+            //print(proverbsArray)
             
         }
         
          self.delegate.refresh()
     }
+    
+    
+    func showProverb(id: Int) -> Proverb? {
+        
+        for proverb in proverbsArray {
+            
+            if proverb.id == id {
+                return proverb
+            }
+        }
+        
+        return nil
+    }
+
 }
 
 
