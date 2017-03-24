@@ -10,9 +10,15 @@ import UIKit
 
 class ProverbsTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var background: UIView!
     @IBOutlet weak var proverbDescription: UILabel!
     
-    @IBOutlet weak var seeOpposite: UIButton!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        background.layer.cornerRadius = 15
+   
+    }
+    
 
 
 }
