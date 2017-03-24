@@ -15,7 +15,7 @@ class ProverbDetailViewController: UIViewController {
     @IBOutlet weak var detail_background: UIView!
     
     @IBOutlet weak var proverbDescription: UILabel!
-
+    
     @IBOutlet weak var proverbMeaning: UILabel!
     
     @IBOutlet weak var seeOpposite: UIButton!
@@ -37,16 +37,16 @@ class ProverbDetailViewController: UIViewController {
         seeOpposite.isEnabled = proverb.hasOpposite
         detail_background.layer.cornerRadius = 15
     }
-
+    
     func showMeaning() {
         proverbDescription.text = proverb.description
         showingOpposite = false
     }
     
     func viewOpposite() {
-         proverbDescription.text = proverbOpposite?.description
-         proverbMeaning.text = proverbOpposite?.meaning
-         showingOpposite = true
-   }
-
+        proverbDescription.text = proverbOpposite?.description
+        proverbMeaning.text = proverbOpposite?.meaning
+        showingOpposite = true
+    }
+    
 }

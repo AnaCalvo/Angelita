@@ -56,7 +56,7 @@
                                 <connections>
                                     <outlet property="background" destination="STX-uk-2hw" id="2gD-Wj-v4F"/>
                                     <outlet property="proverbDescription" destination="BUr-9f-nRK" id="1tC-oB-mID"/>
-                                    <segue destination="p77-8R-OKc" kind="show" id="RmI-O3-MXM"/>
+                                    <segue destination="p77-8R-OKc" kind="show" id="zaC-55-wie"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -116,7 +116,7 @@
                                                     <color key="titleColor" red="1" green="0.2463309971" blue="0.87151620460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="showOpposite:" destination="p77-8R-OKc" eventType="touchUpInside" id="sgm-yZ-ATa"/>
+                                                    <action selector="showOpposite:" destination="p77-8R-OKc" eventType="touchUpInside" id="CIv-sd-bnn"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver contrarefrán" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-94-Jro">
@@ -155,7 +155,7 @@
                         <outlet property="detail_background" destination="Zb6-NH-aVA" id="3Iw-EG-K80"/>
                         <outlet property="proverbDescription" destination="Bbh-4A-gpL" id="ABK-3C-i5h"/>
                         <outlet property="proverbMeaning" destination="Wyc-EE-tMV" id="5y7-3l-oc7"/>
-                        <outlet property="seeOpposite" destination="KgY-dn-vA5" id="PJo-Nt-rKu"/>
+                        <outlet property="seeOpposite" destination="KgY-dn-vA5" id="SZF-R5-CRX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbW-WX-8Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,7 +167,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hJl-wO-P0m" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="qvJ-OX-vKs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="qvJ-OX-vKs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.47410213947296143" green="0.79069489240646362" blue="0.62770730257034302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
