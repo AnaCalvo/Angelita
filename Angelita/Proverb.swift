@@ -75,8 +75,6 @@ class ProverbsManager {
                 
             }
             
-            //print(proverbsArray)
-            
         }
         
          self.delegate.refresh()

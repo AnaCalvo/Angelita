@@ -16,10 +16,10 @@ class ProverbsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         background.layer.cornerRadius = 15
+        background.layer.borderColor = UIColor(red: 0.47, green: 0.79, blue: 0.62, alpha: 1).cgColor
+        background.layer.borderWidth = 2
    
     }
-    
-
 
 }
 

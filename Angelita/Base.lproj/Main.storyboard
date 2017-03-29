@@ -21,17 +21,16 @@
                         <view key="tableHeaderView" contentMode="scaleToFill" id="uxA-fK-R70">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" rowHeight="111" id="OgM-86-R7E" customClass="ProverbsTableViewCell" customModule="Angelita" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" rowHeight="111" id="OgM-86-R7E" customClass="ProverbsTableViewCell" customModule="Angelita" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="43" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OgM-86-R7E" id="YDy-fJ-DcF">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STX-uk-2hw">
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="STX-uk-2hw">
                                             <rect key="frame" x="8" y="13" width="326" height="84.5"/>
                                             <color key="backgroundColor" red="0.094117647058823528" green="0.11764705882352941" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </view>
@@ -42,6 +41,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="STX-uk-2hw" secondAttribute="trailing" id="22e-eU-Roe"/>
@@ -156,6 +156,7 @@
                         <outlet property="proverbDescription" destination="Bbh-4A-gpL" id="ABK-3C-i5h"/>
                         <outlet property="proverbMeaning" destination="Wyc-EE-tMV" id="5y7-3l-oc7"/>
                         <outlet property="seeOpposite" destination="KgY-dn-vA5" id="SZF-R5-CRX"/>
+                        <outlet property="seeOppositeLabel" destination="iUB-94-Jro" id="Mg9-RE-X6S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbW-WX-8Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
