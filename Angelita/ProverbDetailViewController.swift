@@ -25,7 +25,9 @@ class ProverbDetailViewController: UIViewController {
     @IBAction func showOpposite(_ sender: UIButton) {
         
         showingOpposite ? showMeaning() : viewOpposite()
-       
+        
+        UIView.transition(with: detail_background, duration: 0.5, options: [.transitionFlipFromLeft, .showHideTransitionViews], animations: {self.detail_background.isHidden = false})
+        
     }
     
     var proverb: Proverb!

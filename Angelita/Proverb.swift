@@ -10,7 +10,6 @@ import Foundation
 
 typealias JSONDictionary = [String: Any]
 
-
 struct Proverb {
     let id: Int
     let description: String
